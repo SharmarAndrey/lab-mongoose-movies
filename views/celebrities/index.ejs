@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Celebrities List</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+</head>
+
+<body>
+	<h1>Celebrities List</h1>
+	<main class="container">
+		<% for (const c of celebrities) { %>
+			<article>
+				<header>
+					<h2>
+						<%= c.name %> - <%= c.occupation %>
+					</h2>
+				</header>
+				<div>
+					<%= c.catchPhrase %>
+				</div>
+			</article>
+			<% } %>
+	</main>
+</body>
+
+</html>
